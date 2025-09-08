@@ -36,6 +36,7 @@ where Color is not null
 
 
 --7.Write a query that generates the following result set from Production.Product:
+/*
 <single column>
 NAME: LL Crankarm -- COLOR: Black
 NAME: ML Crankarm -- COLOR: Black
@@ -46,6 +47,7 @@ NAME: Chainring -- COLOR: Black
 NAME: Freewheel -- COLOR: Silver
 NAME: Front Derailleur Cage -- COLOR: Silver
 ...
+*/
 
 select 'NAME: ' + Name + ' -- COLOR: ' + Color as '<single column>' 
 from Production.Product
@@ -113,4 +115,5 @@ select distinct ProductSubcategoryID, Color
 from Production.Product
 where ProductSubcategoryID is not null
 and Color is not null
+
 
