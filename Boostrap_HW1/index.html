@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Movie Shop</a>
+
+            <!-- 折叠开关（移动端） -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 折叠内容 -->
+            <div class="collapse navbar-collapse" id="mainNav">
+            <!-- 左侧导航：GENRES 下拉 -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="genresDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    GENRES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="genresDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Comedy</a></li>
+                    <li><a class="dropdown-item" href="#">Drama</a></li>
+                </ul>
+                </li>
+            </ul>
+
+            <!-- 右侧：Login / Register 胶囊按钮 -->
+            <div class="d-flex">
+                <a href="index.html" class="btn btn-outline-light btn-sm rounded-pill me-2">Login</a>
+                <a href="register.html" class="btn btn-outline-light btn-sm rounded-pill">Register</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Form Component -->
+    <div class="container mt-5">
+    <h2 class="text-center mb-4">Login</h2>
+    <form class="mx-auto" style="max-width: 400px;">
+        <!-- 邮件、密码输入框 -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password">
+        </div>
+        
+
+        <!-- Login、Register 按钮 -->
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+        <div class="text-center mt-3">
+            <small class="text-muted d-block mb-2">Don't have an account?</small>
+            <a href="register.html" class="btn btn-outline-secondary w-100">Register</a>
+        </div>
+    </form>
+    </div>
+
+</body>
+</html>
